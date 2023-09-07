@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="wrap_content"
+    android:layout_width="match_parent"
     android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_margin="5dp"
     android:background="@color/faceblue"
-
     app:cardElevation="4dp">
 
     <RelativeLayout
@@ -15,8 +14,11 @@
 
         <TextView
             android:id="@+id/note_title"
-            android:layout_width="310dp"
+            android:layout_width="320dp"
             android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
             android:layout_marginStart="4dp"
             android:layout_marginTop="4dp"
             android:clickable="true"
@@ -26,10 +28,7 @@
             android:text="Note Title"
             android:textColor="@color/white"
             android:textSize="23sp">
-
         </TextView>
-
-
 
         <ImageView
             android:id="@+id/dlticon"
@@ -45,11 +44,5 @@
             android:padding="5dp"
             android:src="@drawable/ic_delete"
             app:tint="@color/faceblue" />
-
-
     </RelativeLayout>
-
-
-
-
 </androidx.cardview.widget.CardView>

@@ -1,6 +1,7 @@
 package com.project.notesapp.recyclerview
 
 import android.content.Context
+import android.os.Build.VERSION_CODES.R
 
 import android.view.LayoutInflater
 import android.view.View
@@ -8,8 +9,7 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
-import com.project.notesapp.R
-import com.project.notesapp.activities.Note
+import com.project.notesapp.activities.model.Note
 
 class NoteRvAdapter(
     val context : Context,

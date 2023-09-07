@@ -1,8 +1,11 @@
-package com.project.notesapp.activities
+package com.project.notesapp.activities.viewmodel
 import android.app.Application
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.viewModelScope
+import com.project.notesapp.activities.model.Note
+import com.project.notesapp.activities.room.NoteDatabase
+import com.project.notesapp.activities.room.NoteRepo
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 

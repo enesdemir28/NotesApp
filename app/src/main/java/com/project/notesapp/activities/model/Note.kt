@@ -1,4 +1,4 @@
-package com.project.notesapp.activities
+package com.project.notesapp.activities.model
 
 import androidx.room.ColumnInfo
 import androidx.room.Entity

@@ -1,4 +1,4 @@
-package com.project.notesapp.activities
+package com.project.notesapp.activities.activitys
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -8,6 +8,8 @@ import android.widget.EditText
 import android.widget.Toast
 import androidx.lifecycle.ViewModelProvider
 import com.project.notesapp.R
+import com.project.notesapp.activities.model.Note
+import com.project.notesapp.activities.viewmodel.NoteViewModel
 import java.text.SimpleDateFormat
 import java.util.*
 
@@ -68,7 +70,7 @@ class AddEditNoteActivity : AppCompatActivity() {
                     Toast.makeText(this,"Note Added",Toast.LENGTH_LONG).show()
                 }
             }
-            startActivity(Intent(applicationContext,MainActivity::class.java))
+            startActivity(Intent(applicationContext, MainActivity::class.java))
             this.finish()
         }
     }
