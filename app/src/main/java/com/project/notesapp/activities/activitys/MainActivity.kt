@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.widget.Toast
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
+import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.google.android.material.floatingactionbutton.FloatingActionButton
@@ -30,7 +31,7 @@ class MainActivity : AppCompatActivity(), NoteClickInterface, NoteClickDeleteInt
 
         noteRv = findViewById(R.id.rvnotes)
         fltbtn = findViewById(R.id.fltbtn)
-        noteRv.layoutManager = LinearLayoutManager(this)
+        noteRv.layoutManager = GridLayoutManager(this,2)
 
         val noteRvAdapter = NoteRvAdapter(this,this,this)
         noteRv.adapter = noteRvAdapter
