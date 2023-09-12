@@ -15,4 +15,6 @@ You can keep, update and delete notes in this application
 
 # Images
 
-## Main Activity
+## Activitys
+
+![Main Activity](MainActivity.PNG), ![Save Note Activity](SaveNoteActivty.PNG), ![Saved Note Activity](SavedNoteActivity.PNG), ![Update Note Activity](UpdateNoteActivity.PNG)
